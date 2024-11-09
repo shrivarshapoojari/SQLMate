@@ -32,3 +32,10 @@ print("The inserted data is")
 
 
 data=cursor.execute("select * from STUDENT")
+
+
+for row in data:
+    print(row)
+
+connection.commit()
+connection.close()
